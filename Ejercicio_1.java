@@ -20,8 +20,8 @@ public class Ejercicio_1 {
 
     public static double calcularIngresosMensuales(double[] ventas) {
         double total = 0;
-        for (int i = 0; i < ventas.length; i++) {
-            total += ventas[i];
+        for (double venta : ventas) {
+            total += venta;
         }
         return total;
     }

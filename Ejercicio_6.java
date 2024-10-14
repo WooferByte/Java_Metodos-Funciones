@@ -14,10 +14,10 @@ public class Ejercicio_6 {
     public static void calcularImpuesto(double[] facturas) {
         System.out.println("Facturas con impuesto del 21% aplicado:");
 
-        for (int i = 0; i < facturas.length; i++) {
-            double impuesto = facturas[i] * 0.21;
-            double totalConImpuesto = facturas[i] + impuesto;
-            System.out.println("Factura original: $" + facturas[i] + " - Total con impuesto: $" + totalConImpuesto);
+        for (double factura : facturas) {
+            double impuesto = factura * 0.21;
+            double totalConImpuesto = factura + impuesto;
+            System.out.println("Factura original: $" + factura + " - Total con impuesto: $" + totalConImpuesto);
         }
     }
 }
